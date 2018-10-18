@@ -5,7 +5,7 @@ This is a pre-commit git hook optimized for R-packages built with lucode. Upon e
 To use this pre-commit hook, firstly clone this repository:
 
 ```shell
-$ git clone https://github.com/AtreyaSh/preCommitBadgeUpdate && cd preCommitBadgeUpdate
+$ git clone https://github.com/AtreyaSh/preCommitHook && cd preCommitHook
 ```
 
 Next, simply copy the `pre-commit` executable file into the `.git/hooks/`directory of a desired git repository:
