@@ -8,7 +8,7 @@ To use this pre-commit hook, firstly clone this repository:
 git clone https://github.com/AtreyaSh/preCommitBadgeUpdate && cd preCommitBadgeUpdate
 ```
 
-Next, simply copy the `pre-commit` executable file into the `.git/hooks/`directory of a desired git repository:
+Next, simply copy the `pre-commit` executable file into the `/.git/hooks/`directory of a desired git repository:
 
 ```shell
 cp pre-commit /path/to/repo/.git/hooks/
