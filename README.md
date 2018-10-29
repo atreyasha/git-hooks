@@ -4,7 +4,7 @@ This repository contains useful `pre-commit` hooks for various purposes. Here is
 
 1. `pre-commit-version.sample` is a pre-commit hook which automatically updates the version number of a github badge. This circumvents the need to push your repo to another site. This has been tested with the `shields.io` release-number badge.
 
-2. `pre-commit-readme2tex.sample` is a pre-commit hook which acts as a temporary bug fix to `readme2tex` due to rawgit going down. This essentially reformats svg links in the `README.md` file to contain local svg links and it also helps to remove unused svgs.
+2. `pre-commit-readme2tex.sample` is a pre-commit hook which acts as a temporary bug fix to `readme2tex` due to rawgit going down. This essentially reformats svg links in the `README.md` file to contain local svg links and it also helps to remove unused svgs. This has also been discussed in the following issue: https://github.com/leegao/readme2tex/issues/22
 
 ## Utility
 
