@@ -11,7 +11,7 @@ This repository contains useful `pre-commit` hooks for various purposes. Here is
 To use these pre-commit hooks, firstly clone this repository:
 
 ```shell
-$ git clone https://github.com/AtreyaSh/preCommitBadgeUpdate && cd preCommitBadgeUpdate
+$ git clone https://github.com/AtreyaSh/preCommitHook && cd preCommitHook
 ```
 
 Next, copy the relevant `.sample` executable file into the `.git/hooks/`directory of a desired git repository:
