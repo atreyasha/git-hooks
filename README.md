@@ -6,7 +6,7 @@ This repository contains useful `pre-commit` hooks for various purposes. Here is
 
 2. `pre-commit-readme2tex.sample` is a pre-commit hook which acts as a temporary bug fix to `readme2tex` due to rawgit going down. This essentially reformats svg links in the `README.md` file to contain local svg links and it also helps to remove unused svgs.
 
-# Utility
+## Utility
 
 To use these pre-commit hooks, firstly clone this repository and navigate to its main directory:
 
