@@ -13,7 +13,7 @@ This repository contains useful `pre-commit` hooks for various purposes. Here is
 To use these pre-commit hooks, firstly clone this repository and navigate to its main directory:
 
 ```shell
-$ git clone https://github.com/AtreyaSh/preCommitHooks && cd preCommitHooks
+$ git clone https://github.com/atreyasha/preCommitHooks && cd preCommitHooks
 ```
 
 Next, copy the relevant `.sample` executable file into the `.git/hooks/` directory of a desired git repository with its name as `pre-commit`:
