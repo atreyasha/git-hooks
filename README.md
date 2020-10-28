@@ -38,7 +38,7 @@ The names of the main and mirror branches can be specified in the `main` functio
     $ cp /path/to/pre-push.sh ./git/hooks/pre-push
     ```
 
-**Note:** These hooks are generally non-invasive, ie. they exit gracefully if dependencies or staged changes are missing. The hooks have been tested to show that they do not interfere with the overall commit or push process in case of any failures.
+**Note:** These hooks are generally non-invasive, ie. they exit gracefully if dependencies or staged changes are missing and do not interfere with the overall commit or push process in case of failures.
 
 ## Bugs/Issues :bug:
 
