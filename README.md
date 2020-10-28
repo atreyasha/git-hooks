@@ -13,7 +13,7 @@ This repository documents two git hooks which assist with `python`, `shell`, `R`
 | update_python_dependencies | Updates `requirements.txt` to maintain log of python dependencies                                                   | [poetry](https://github.com/python-poetry/poetry) |
 | format_shell_scripts       | Formats all shell scripts with consistent indents                                                                   | [shfmt](https://github.com/mvdan/sh)              |
 | format_R_scripts           | Formats all R scripts for clean code                                                                                | [styler](https://github.com/r-lib/styler)         |
-| convert_org_to_md          | Converts a specific `org` file to github-flavored `markdown`, adds a `TOC` and cleans up `TODO` and `DONE` markers | [pandoc](https://github.com/jgm/pandoc)           |
+| convert_org_to_md          | Converts specified `org` file(s) to github-flavored `markdown`, adds a `TOC` and cleans up `TODO` and `DONE` markers | [pandoc](https://github.com/jgm/pandoc)           |
 
 In addition, we provide a `main` function where the user can decide which of the above functions to use; as well as fine-tune the input parameters.
 
