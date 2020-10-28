@@ -1,6 +1,6 @@
 # Git hooks :anchor:
 
-This repository documents two git hooks which assist with `python`, `shell`, `R` and `org-mode` development workflows. 
+This repository documents two git hooks which assist with `python`, `shell`, `R` and `org-mode` development workflows; as well as remote branch mirroring.
 
 ## Overview :book:
 
