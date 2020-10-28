@@ -29,14 +29,16 @@ The names of the main and mirror branches can be specified in the `main` functio
 
 ## Usage :cyclone:
 
-In order to initialize both hooks, simply copy both hooks to `./git/hooks/` and remove the `.sh` extension. For example:
+1. Copy over the hooks and edit the `main` function(s) to customize callable functions and input parameters.
 
-```shell
-$ cp /path/to/pre-commit.sh ./git/hooks/pre-commit
-$ cp /path/to/pre-push.sh ./git/hooks/pre-push
-```
+2. In order to initialize both hooks, copy the edited hooks to `./git/hooks/` and remove the `.sh` extension. For example:
 
-These hooks are generally non-invasive, ie. they exit gracefully if dependencies or staged changes are missing. The hooks have been tested to show that they do not interfere with the overall commit or push process in case of any failures.
+  ```shell
+  $ cp /path/to/pre-commit.sh ./git/hooks/pre-commit
+  $ cp /path/to/pre-push.sh ./git/hooks/pre-push
+  ```
+
+**Note:** These hooks are generally non-invasive, ie. they exit gracefully if dependencies or staged changes are missing. The hooks have been tested to show that they do not interfere with the overall commit or push process in case of any failures.
 
 ## Bugs/Issues :bug:
 
