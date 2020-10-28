@@ -31,7 +31,7 @@ The names of the main and mirror branches can be specified in the `main` functio
 
 1. Edit the `main` function(s) of the hooks to customize callable functions and input parameters.
 
-2. In order to initialize both hooks, copy the edited hooks to `./git/hooks/` and remove the `.sh` extension. For example:
+2. In order to initialize both hooks, copy the edited hooks to `./git/hooks/` in your desired `git` repository and remove the `.sh` extension. For example:
 
     ```shell
     $ cp /path/to/pre-commit.sh ./git/hooks/pre-commit
