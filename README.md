@@ -29,7 +29,7 @@ The names of the main and mirror branches can be specified in the `main` functio
 
 ## Usage :cyclone:
 
-1. Copy over the hooks and edit the `main` function(s) to customize callable functions and input parameters.
+1. Edit the `main` function(s) of the hooks to customize callable functions and input parameters.
 
 2. In order to initialize both hooks, copy the edited hooks to `./git/hooks/` and remove the `.sh` extension. For example:
 
