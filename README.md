@@ -33,12 +33,12 @@ The names of the main and mirror branches can be specified in the `main` functio
 
 2. In order to initialize both hooks, copy the edited hooks to `./git/hooks/` and remove the `.sh` extension. For example:
 
-  ```shell
-  $ cp /path/to/pre-commit.sh ./git/hooks/pre-commit
-  $ cp /path/to/pre-push.sh ./git/hooks/pre-push
-  ```
+    ```shell
+    $ cp /path/to/pre-commit.sh ./git/hooks/pre-commit
+    $ cp /path/to/pre-push.sh ./git/hooks/pre-push
+    ```
 
-**Note:** These hooks are generally non-invasive, ie. they exit gracefully if dependencies or staged changes are missing. The hooks have been tested to show that they do not interfere with the overall commit or push process in case of any failures.
+    **Note:** These hooks are generally non-invasive, ie. they exit gracefully if dependencies or staged changes are missing. The hooks have been tested to show that they do not interfere with the overall commit or push process in case of any failures.
 
 ## Bugs/Issues :bug:
 
