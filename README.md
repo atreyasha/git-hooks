@@ -1,6 +1,6 @@
 # Git hooks :anchor:
 
-This repository contains two useful git hooks which help with general development workflows.
+This repository contains two useful git hooks which help with workflows pertaining to `python`, `shell`, `R` and `org-mode` developments. 
 
 ## Overview :book:
 
