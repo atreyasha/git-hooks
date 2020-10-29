@@ -88,8 +88,8 @@ main() {
   # main call to functions
   # NOTE: user edit(s) go here
   update_python_dependencies
-  format_shell_scripts "*.R"
-  format_R_scripts "*.sh"
+  format_shell_scripts "*.sh"
+  format_R_scripts "*.R"
   convert_org_to_md "*.org"
 }
 
