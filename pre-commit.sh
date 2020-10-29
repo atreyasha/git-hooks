@@ -26,6 +26,7 @@ update_python_dependencies() {
 format_shell_scripts() {
   # function to format all shell files
   local input shell_staged
+  input="$1"
   # format staged shell scripts
   if command -v shfmt &>/dev/null; then
     mapfile -t shell_staged < <(find_non_deleted_staged "$input")
@@ -40,6 +41,7 @@ format_shell_scripts() {
 format_R_scripts() {
   # function to format all R files
   local input R_staged
+  input="$1"
   # format staged R files
   if Rscript -e 'styler::style_file' &>/dev/null; then
     mapfile -t R_staged < <(find_non_deleted_staged "$input")
