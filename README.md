@@ -6,7 +6,7 @@ This repository documents two git hooks which assist with `python`, `shell`, `R`
 
 #### Pre-commit hook
 
-`pre-commit.sh` contains a useful hook which is, from its name, a workflow that is executed before every commit. The various functions and dependencies in the shell script are described below:
+`pre-commit` contains a useful hook which is, from its name, a workflow that is executed before every commit. The various functions and dependencies in the shell script are described below:
 
 | Function                   | Description                                                                                                         | Dependencies                                      |
 | :-------------             | :-------------                                                                                                      | :-----                                            |
@@ -19,7 +19,7 @@ In addition, we provide a `main` function where the user can decide which of the
 
 #### Pre-push hook
 
-`pre-push.sh` contains a simpler hook which, from its name, executes a workflow before pushing commits upstream. Here, we provide only one function:
+`pre-push` contains a simpler hook which, from its name, executes a workflow before pushing commits upstream. Here, we provide only one function:
 
 | Function       | Description                                                                                                                                   | Dependencies                                      |
 | :------------- | :-------------                                                                                                                                | :-----                                            |
@@ -31,11 +31,11 @@ The names of the main and mirror branches can be specified in the `main` functio
 
 1. Edit the `main` function(s) of the hooks to customize callable functions and input parameters.
 
-2. In order to initialize both hooks, copy the edited hooks to `./git/hooks/` in your desired `git` repository and remove the `.sh` extension. For example:
+2. In order to initialize both hooks, copy the edited hooks to `./git/hooks/` into your desired `git` repository. For example:
 
     ```shell
-    $ cp /path/to/pre-commit.sh ./git/hooks/pre-commit
-    $ cp /path/to/pre-push.sh ./git/hooks/pre-push
+    $ cp /path/to/pre-commit ./git/hooks/
+    $ cp /path/to/pre-push ./git/hooks/
     ```
 
 **Note:** These hooks are generally non-invasive, ie. they exit gracefully if dependencies or staged changes are missing and do not interfere with the overall commit or push process in case of failures.
