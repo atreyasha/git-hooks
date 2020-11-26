@@ -31,11 +31,11 @@ The names of the main and mirror branches can be specified in the `main` functio
 
 1. Edit the `main` function(s) of the hooks to customize callable functions and input parameters.
 
-2. In order to initialize both hooks, copy the edited hooks to `./git/hooks/` into your desired `git` repository. For example:
+2. In order to initialize both hooks, copy the edited hooks to `./.git/hooks/` in your desired `git` repository. For example:
 
     ```shell
-    $ cp /path/to/pre-commit ./git/hooks/
-    $ cp /path/to/pre-push ./git/hooks/
+    $ cp /path/to/pre-commit ./.git/hooks/
+    $ cp /path/to/pre-push ./.git/hooks/
     ```
 
 **Note:** These hooks are generally non-invasive, ie. they exit gracefully if dependencies or staged changes are missing and do not interfere with the overall commit or push process in case of failures.
