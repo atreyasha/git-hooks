@@ -1,6 +1,6 @@
-# Git hooks :anchor:
+# git-hooks :anchor:
 
-This repository documents two git hooks which assist with `python`, `shell`, `R` and `org-mode` development workflows; as well as automatic branch rebasing.
+This repository documents two git hooks which assist with `python`, `shell`, `R` and `org-mode` development workflows; as well as secondary branch rebasing.
 
 ## Overview
 
