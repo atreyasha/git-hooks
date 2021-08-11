@@ -1,10 +1,10 @@
-## Git hooks :anchor:
+# Git hooks :anchor:
 
 This repository documents two git hooks which assist with `python`, `shell`, `R` and `org-mode` development workflows; as well as remote branch mirroring.
 
-### Overview :book:
+## Overview
 
-#### Pre-commit hook
+### Pre-commit hook
 
 `pre-commit` contains a useful hook which is, from its name, a workflow that is executed before every commit. The various functions and dependencies in the shell script are described below:
 
@@ -17,7 +17,7 @@ This repository documents two git hooks which assist with `python`, `shell`, `R`
 
 In addition, we provide a `main` function where the user can decide which of the above functions to use; as well as fine-tune the input parameters.
 
-#### Pre-push hook
+### Pre-push hook
 
 `pre-push` contains a simpler hook which, from its name, executes a workflow before pushing commits upstream. Here, we provide only one function:
 
@@ -27,7 +27,7 @@ In addition, we provide a `main` function where the user can decide which of the
 
 The names of the main and mirror branches can be specified in the `main` function.
 
-### Usage :cyclone:
+## Usage
 
 1. Edit the `main` function(s) of the hooks to customize callable functions and input parameters.
 
@@ -40,7 +40,7 @@ The names of the main and mirror branches can be specified in the `main` functio
 
 **Note:** These hooks are generally non-invasive, ie. they exit gracefully if dependencies or staged changes are missing and do not interfere with the overall commit or push process in case of failures.
 
-### Bugs/Issues :bug:
+## Bugs/Issues
 
 In case of bugs or suggestions for improvements, feel free to open a GitHub issue.
 
