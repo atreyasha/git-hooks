@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Pre-commit git hook which offers multiple functionalities,
-# including updating python dependencies, formatting shell and R scripts
+# including updating python dependencies, linting shell and R scripts
 # and converting an org document to markdown for logging purposes
 
 find_non_deleted_staged() {
@@ -23,28 +23,28 @@ update_python_dependencies() {
   fi
 }
 
-format_shell_scripts() {
-  # function to format all shell files
+lint_shell_scripts() {
+  # function to lint all shell files
   local input="$1" shell_staged
-  # format staged shell scripts
+  # lint staged shell scripts
   if command -v shfmt &>/dev/null; then
     mapfile -t shell_staged < <(find_non_deleted_staged "$input")
     if ((${#shell_staged[@]})); then
-      printf "%s\n" "Formatting shell scripts with shfmt"
+      printf "%s\n" "Linting shell scripts with shfmt"
       shfmt -w -i 2 "${shell_staged[@]}"
       git add "${shell_staged[@]}"
     fi
   fi
 }
 
-format_R_scripts() {
-  # function to format all R files
+lint_R_scripts() {
+  # function to lint all R files
   local input="$1" R_staged R_file
-  # format staged R files
+  # lint staged R files
   if Rscript -e 'styler::style_file' &>/dev/null; then
     mapfile -t R_staged < <(find_non_deleted_staged "$input")
     if ((${#R_staged[@]})); then
-      printf "%s\n" "Formatting R scripts"
+      printf "%s\n" "Linting R scripts"
       for R_file in "${R_staged[@]}"; do
         Rscript -e "styler::style_file(\"$R_file\")"
       done
@@ -86,8 +86,8 @@ main() {
   # main call to functions
   # NOTE: user edit(s) go here
   update_python_dependencies
-  format_shell_scripts "*.sh"
-  format_R_scripts "*.R"
+  lint_shell_scripts "*.sh"
+  lint_R_scripts "*.R"
   convert_org_to_md "*.org"
 }
 
