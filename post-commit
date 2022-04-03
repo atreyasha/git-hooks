@@ -8,7 +8,7 @@ rebase_branch() {
   local secondary_branches=("$@")
   local secondary stash_entry local_hash
 
-  # eheck that primary and secondary branches are well-defined
+  # check that primary and secondary branches are well-defined
   [[ -n "$primary" && -n "${secondary_branches[*]}" ]] || return 0
 
   # loop over all secondary branches
