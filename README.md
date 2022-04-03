@@ -4,7 +4,7 @@ This repository documents git hooks which assist with `python`, `shell`, `R` and
 
 ## Overview :book:
 
-### Pre-commit hook
+<details><summary>Pre-commit hook</summary><p>
 
 `pre-commit` contains a useful hook which is, from its name, a workflow that is executed before every commit. The various functions and dependencies in the shell script are described below:
 
@@ -17,7 +17,8 @@ This repository documents git hooks which assist with `python`, `shell`, `R` and
 
 In addition, we provide a `main` function where the user can decide which of the above functions to use.
 
-### Post-commit hook
+</p></details>
+<details><summary>Post-commit hook</summary><p>
 
 `post-commit` contains a simpler hook which keeps specified secondary branches rebased with a primary branch. Here, we provide only one function:
 
@@ -26,6 +27,8 @@ In addition, we provide a `main` function where the user can decide which of the
 | rebase_branch | Rebases a secondary branch with a primary branch. This could be useful to keep one branch up-to-date with another while still offering new features. | -            |
 
 The names of the aforementioned branches can be specified in the `main` function.
+
+</p></details>
 
 ## Usage :snowflake:
 
