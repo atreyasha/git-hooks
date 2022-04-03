@@ -1,6 +1,6 @@
 # git-hooks :anchor:
 
-This repository documents two git hooks which assist with `python`, `shell`, `R` and `org-mode` development workflows; as well as secondary branch rebasing.
+This repository documents git hooks which assist with `python`, `shell`, `R` and `org-mode` development workflows as well as secondary branch rebasing.
 
 ## Overview :book:
 
@@ -17,13 +17,13 @@ This repository documents two git hooks which assist with `python`, `shell`, `R`
 
 In addition, we provide a `main` function where the user can decide which of the above functions to use.
 
-### Pre-push hook
+### Post-commit hook
 
-`pre-push` contains a simpler hook which, from its name, executes a workflow before pushing commits upstream. Here, we provide only one function:
+`post-commit` contains a simpler hook which keeps specified secondary branches rebased with a primary branch. Here, we provide only one function:
 
-| Function       | Description                                                                                                                                          | Dependencies |
-| :------------- | :-------------                                                                                                                                       | :-----       |
-| rebase_branch  | Rebases a secondary branch with a primary branch. This could be useful to keep one branch up-to-date with another while still offering new features. | -            |
+| Function      | Description                                                                                                                                          | Dependencies |
+|:--------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------|:-------------|
+| rebase_branch | Rebases a secondary branch with a primary branch. This could be useful to keep one branch up-to-date with another while still offering new features. | -            |
 
 The names of the aforementioned branches can be specified in the `main` function.
 
@@ -35,14 +35,11 @@ The names of the aforementioned branches can be specified in the `main` function
 
     ```shell
     $ cp /path/to/pre-commit ./.git/hooks/
-    $ cp /path/to/pre-push ./.git/hooks/
+    $ cp /path/to/post-commit ./.git/hooks/
     ```
 
-**Note:** These hooks are generally non-invasive, ie. they exit gracefully if dependencies or staged changes are missing and do not interfere with the overall commit or push process in case of failures.
+**Note:** These hooks are generally non-invasive, ie. they exit gracefully if dependencies or staged changes are missing and do not interfere with the overall commit process in case of failures.
 
 ## Bugs/Issues :bug:
 
 In case of bugs or suggestions for improvements, feel free to open a GitHub issue.
-
-<!--  LocalWords:  Pre md github ie
- -->
